@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    background-color: #edebde;
+}
+
+.main-container, .form-container {
+    max-width: 1400px;
+}
+
+.nav-logo {
+    height: 30px;
+}
+
+.nav-company-name {
+    padding-top: 6px;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.nav-logo img {
+    height: 20px;
+}
+
+.navbar-toggler {
+    border: 2px solid transparent; /* Set a default transparent border */
+    transition: border 0.3s ease;  /* Smooth transition for border */
+}
+
+/* You can customize the border when active or open if needed */
+.navbar-toggler.open {
+    border: 2px solid #000;  /* Example: Border when menu is opened */
+}
+
+.offcanvas-info {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.offcanvas-title {
+    font-weight: 300;
+    font-size: 25px;
+    
+}
+
+.offcanvas {
+    background-color: #594a28;
+    color: #edebde;
+}
+
+.navbar-nav .nav-link {
+    color: #edebde;
+}
+
+.offcanvas-body {
+    /* Set the text color to white */
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+   }
+
+.offcanvas-social-media-container {
+    display: flex;
+    justify-content: center; /* Align the icons to the left (optional, depending on your design) */
+    gap: 15px; /* Optional: Creates space between the social media icons */
+}
+
+.contact-social-media-container {
+    display: flex;
+    justify-content: center; /* Align the icons to the left (optional, depending on your design) */
+    gap: 40px; /* Optional: Creates space between the social media icons */
+}
+
+.offcanvas-social-media a img {
+    height: 100%;
+    padding: 0 10px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: black;
+    font-weight: 350;
+}
+
+.contact-info-container {
+    border-bottom: 1px solid #000;
+}
+
+
+input, label {
+    border-radius: 0;
+}
+
+input {
+    
+}
+
+.form-submit-btn {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    border: 1px solid black;
+}
+
+.footer {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #3f261c;
+    color: #edebde;
+}
+
+.footer .row {
+    padding: 0; /* If there is padding on rows within the footer, remove it */
+}
+
+.footer a {
+    text-decoration: none;
+    color: #edebde;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer h3 {
+    font-size: 14;
+}
+
+@media screen and (max-width: 767px) {
+    .contact-social-media-container {
+        width: 700px;
+        margin-top: 50px;
+    }
+    .contact-social-media a img {
+        height: 30px; /* Adjust the size of the icons for smaller screens */
+        justify-content: space-between;
+    }
+    .form-submit-btn {
+        width: 100%; /* Make the button full width on smaller screens */
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .footer-links {
+        padding-top: 25px;
+    }
+}
